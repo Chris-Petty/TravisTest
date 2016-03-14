@@ -1,0 +1,63 @@
+{
+  "name": "PropertyFinder",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "mocha --require react-native-mock/mock --recursive './__tests__/*.js' --compilers js:babel-core/register"
+  },
+  "dependencies": {
+    "react-native": "^0.20.0",
+    "react-dom": "~0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.5",
+    "babel-jest": "*",
+    "chai": "^3.5.0",
+    "enzyme": "^2.0.0",
+    "expect": "^1.14.0",
+    "jest-cli": "^0.8.2",
+    "mocha": "^2.4.5",
+    "mockery": "^1.4.1",
+    "react": "^0.14.7",
+    "react-addons-test-utils": "~0.14.0",
+    "react-native-mock": "0.0.6",
+    "sinon": "^1.17.3"
+  },
+  "jest": {
+    "scriptPreprocessor": "node_modules/react-native/jestSupport/preprocessor.js",
+    "setupEnvScriptFile": "node_modules/react-native/jestSupport/env.js",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "packager/react-packager/src/Activity/"
+    ],
+    "unmockedModulePathPatterns": [
+      "promise",
+      "source-map",
+      "react",
+      "react-dom",
+      "react-addons-test-utils",
+      "fbjs",
+      "enzyme",
+      "cheerio",
+      "htmlparser2",
+      "lodash",
+      "domhandler",
+      "object.assign",
+      "define-properties",
+      "function-bind",
+      "object-keys",
+      "object.values",
+      "es-abstract"
+    ]
+  }
+}
