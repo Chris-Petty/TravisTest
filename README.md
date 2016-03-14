@@ -1,5 +1,5 @@
 
-https://api.shippable.com/projects/56e62aa09d043da07bd2a8d4/badge?branch=master
+![Build status](https://api.shippable.com/projects/56e62aa09d043da07bd2a8d4/badge?branch=master)
 
 
 # shippableDemo
