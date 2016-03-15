@@ -30,7 +30,7 @@ describe('SearchPage', () => {
     const wrapper = shallow(<SearchPage />);
 
     // Check that it is false initially i.e. not loading.
-    expect(wrapper.state('isLoading')).toBe(false);
+    expect(wrapper.state('isLoading')).toBe(true);
 
     // Simulate a touch on 'Go' button and verify loading is now true
     // Hash indicates search for CSS id
